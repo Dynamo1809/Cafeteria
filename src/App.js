@@ -1,6 +1,7 @@
 import { Component } from 'react';
 // Components //
 import { ProductList } from 'components/ProductList';
+import { AuthForm } from 'components/AuthForm';
 // JSON //
 import {products} from 'api/products.json';
 // Styles //
@@ -34,6 +35,7 @@ class App extends Component {
     });
     return (
       <div className="App">
+        <AuthForm />
         <div style={{ padding: '30px 10px 10px' }}>
           <input 
             onChange={ this.handleChange }
